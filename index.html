@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Social Media Dashboard</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon-32x32.png">
+</head>
+<body>
+
+    <div class="outgrid">
+        
+        <header class="header-for-desktop">
+            <div style="display: flex; justify-content: space-between;">
+                <p class="title">Social Media Dashboard</p>
+
+                <div class="toggle-button">
+                    <p class="color-blue size-14px weight-700">Dark Mode</p>
+                    <div class="toggle-button-container">
+                        <input type="checkbox" id="check" onclick="toggle();">
+                        <label for="check" class="toggle-button-circle"></label>
+                    </div>
+                </div>
+
+            </div>
+            
+            <p class="color-blue weight-700 size-14px">Total Followers: 23,004</p>
+        </header>
+
+        <header class="header-for-mobile">
+            <div style="padding-bottom: 20px; margin-bottom: 20px; border-bottom: 1px solid #333A55">
+                <p class="title">Social Media Dashboard</p>
+                <p class="color-blue weight-700 size-14px">Total Followers: 23,004</p>
+            </div>
+
+            <div class="toggle-button">
+                <p class="color-blue size-14px weight-700">Dark Mode</p>
+                <div class="toggle-button-container">
+                    <input type="checkbox" id="check">
+                    <label for="check" class="toggle-button-circle"></label>
+                </div>
+            </div>          
+
+        </header>
+
+        <section class="container">
+            <div class="card follower-box br-facebook">
+                <figure>
+                    <img src="./img/icon-facebook.svg" alt="">
+                    <p class="color-blue size-12px weight-700">@nathanf</p>
+                </figure>
+                
+                <div class="flex-column">
+                    <p class="size-56px weight-700">1987</p>
+                    <p class="color-blue spaced-letters size-12px weight-400">FOLLOWERS</p>
+                </div>
+                <span class="img-in-text color-green size-12px">
+                    <img src="./img/icon-up.svg" alt=""> 12 Today
+                </span>
+            </div>
+            <div class="card follower-box br-twitter">
+                <figure>
+                    <img src="./img/icon-twitter.svg" alt="">
+                    <p class="color-blue size-12px weight-700">@nathanf</p>
+                </figure>
+
+                <div class="flex-column">
+                    <p class="size-56px weight-700">1044</p>
+                    <p class="color-blue spaced-letters size-12px weight-400">FOLLOWERS</p>
+                </div>
+
+                <span class="img-in-text color-green size-12px">
+                    <img src="./img/icon-up.svg" alt=""> 99 Today
+                </span>
+            </div>
+            <div class="card follower-box br-instagram">
+                <figure>
+                    <img src="./img/icon-instagram.svg" alt="">
+                    <p class="color-blue size-12px weight-700">@realnathanf</p>
+                </figure>
+
+                <div class="flex-column">
+                    <p class="size-56px weight-700">11k</p>
+                    <p class="color-blue spaced-letters size-12px weight-400">FOLLOWERS</p>
+                </div>
+
+                <span class="img-in-text color-green size-12px">
+                    <img src="./img/icon-up.svg" alt=""> 1099 Today
+                </span>
+            </div>
+            <div class="card follower-box br-youtube">
+                <figure>
+                    <img src="./img/icon-youtube.svg" alt="">
+                    <p class="color-blue size-12px weight-700">Nathan F.</p>
+                </figure>
+
+                <div class="flex-column">
+                    <p class="size-56px weight-700">8239</p>
+                    <p class="color-blue spaced-letters size-12px weight-400">SUBSCRIBERS</p>
+                </div>
+
+                <span class="img-in-text color-red size-12px">
+                    <img src="./img/icon-down.svg" alt=""> 144 Today
+                </span>
+            </div>
+        </section>
+
+        <section>
+            <p class="title">Overview - Today</p>
+        </section>
+
+        <section class="container">
+            
+            <div class="card overview">
+                <p class="size-14px weight-700 color-blue">Page Views</p>
+                <img src="./img/icon-facebook.svg" alt="">
+                <p class="size-32px weight-700">87</p>
+                <span class="img-in-text color-green">
+                    <img src="./img/icon-up.svg" alt=""> 3%
+                </span>
+            </div>
+
+            <div class="card overview">
+                <p class="size-14px weight-700 color-blue">Likes</p>
+                <img src="./img/icon-facebook.svg" alt="">
+                <p class="size-32px weight-700">52</p>
+                <span class="img-in-text color-red">
+                    <img src="./img/icon-down.svg" alt=""> 2%
+                </span>
+            </div>
+
+            <div class="card overview">
+                <p class="size-14px weight-700 color-blue">Likes</p>
+                <img src="./img/icon-instagram.svg" alt="">
+                <p class="size-32px weight-700">5462</p>
+                <span class="img-in-text color-green">
+                    <img src="./img/icon-up.svg" alt=""> 2257%
+                </span>
+            </div>
+
+            <div class="card overview">
+                <p class="size-14px weight-700 color-blue">Profile Views</p>
+                <img src="./img/icon-instagram.svg" alt="">
+                <p class="size-32px weight-700">52k</p>
+                <span class="img-in-text color-green">
+                    <img src="./img/icon-up.svg" alt=""> 1375%
+                </span>
+            </div>
+
+            <div class="card overview">
+                <p class="size-14px weight-700 color-blue">Retweets</p>
+                <img src="./img/icon-twitter.svg" alt="">
+                <p class="size-32px weight-700">117</p>
+                <span class="img-in-text color-green">
+                    <img src="./img/icon-up.svg" alt=""> 303%
+                </span>
+            </div>
+
+            <div class="card overview">
+                <p class="size-14px weight-700 color-blue">Likes</p>
+                <img src="./img/icon-twitter.svg" alt="">
+                <p class="size-32px weight-700">507</p>
+                <span class="img-in-text color-green">
+                    <img src="./img/icon-up.svg" alt=""> 553%
+                </span>
+            </div>
+
+            <div class="card overview">
+                <p class="size-14px weight-700 color-blue">Likes</p>
+                <img src="./img/icon-youtube.svg" alt="">
+                <p class="size-32px weight-700">107</p>
+                <span class="img-in-text color-red">
+                    <img src="./img/icon-down.svg" alt=""> 19%
+                </span>
+            </div>
+
+            <div class="card overview">
+                <p class="size-14px weight-700 color-blue">Page Views</p>
+                <img src="./img/icon-youtube.svg" alt="">
+                <p class="size-32px weight-700">1407</p>
+                <span class="img-in-text color-red">
+                    <img src="./img/icon-down.svg" alt=""> 12%
+                </span>
+            </div>
+
+        </section>
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
